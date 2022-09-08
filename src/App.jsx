@@ -1,9 +1,12 @@
 import './App.css'
+import Nav from './components/Nav'
 
 function App() {
  
   return (
-   "helloo world"
+    <section className='app-section'>
+      <Nav />
+    </section>
   )
 }
 

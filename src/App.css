@@ -1,6 +1,19 @@
-#root {
-  max-width: 1280px;
+body {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+}
+
+.nav-section {
+  background-color: salmon;
+}
+
+.nav-elements {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.nav-element {
+  margin-left: 10px;
+  text-decoration: none;
+  color: antiquewhite;
 }
