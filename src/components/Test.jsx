@@ -1,6 +1,6 @@
 export default function Test() {
     return (
-        <div>
+        <div className="main-section">
             <header>
                 <span>CV</span>
             </header>
