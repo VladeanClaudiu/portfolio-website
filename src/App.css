@@ -1,5 +1,5 @@
 /* @link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,6,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,xs-3xl */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@200&display=swap');
 body {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   background: var(--darkColor);
@@ -22,15 +22,20 @@ body {
 }
 
 h1 {
+  
   font-size: var(--step-1);
   color: var(--lightestColor);
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0 auto;
-  border: 8px solid var(--lighterColor);
-  height: 100%;
-  position: relative;
+  position: relative; 
+}
+
+.main-section {
+  border: 10px solid var(--lighterColor);
+  padding: 20px;
 }
 
 .nav-section {
@@ -42,6 +47,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  z-index: 1;
 }
 
 .nav-elements {

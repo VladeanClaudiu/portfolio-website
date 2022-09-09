@@ -3,16 +3,16 @@ export default function Nav() {
         <nav className="nav-section">
             <ul className="nav-elements">
                 <li>
-                    <a className="nav-element" href="">About</a>
+                    <a className="nav-element" href="">about</a>
                 </li>
                 <li>
-                    <a className="nav-element" href="">Projects</a>
+                    <a className="nav-element" href="">projects</a>
                 </li>
                 <li>
-                    <a className="nav-element" href="">Contact</a>
+                    <a className="nav-element" href="">contact</a>
                 </li>
                 <li>
-                    <a className="nav-element" href="">DarkMode</a>
+                    <a className="nav-element" href="">darkmode</a>
                 </li>
             </ul>
         </nav>
