@@ -2,7 +2,7 @@
 
 body {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  background: #25316D;
+  background: var(--darkColor);
 }
 
 :root {
@@ -15,10 +15,10 @@ body {
   --step-6: clamp(3.92rem, calc(3.22rem + 3.52vw), 5.72rem);
 
   /* colors */
-  --darkColor : #1C3879;
-  --lightColor : #607EAA;
-  --lighterColor : #EAE3D2;
-  --lightestColor : #F9F5EB;
+  --darkColor : #002B5B;
+  --lightColor : #2B4865;
+  --lighterColor : #256D85;
+  --lightestColor : #8FE3CF;
 }
 
 h1 {
@@ -28,26 +28,33 @@ h1 {
 
 body {
   margin: 0 auto;
-  border: 8px solid var(--lightestColor);
+  border: 8px solid var(--lighterColor);
   height: 100%;
   position: relative;
 }
 
 .nav-section {
-  background-color: var(--lightColor);
+  background-color: var(--darkColor);
   width: 100%;
   bottom: 0;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .nav-elements {
-  margin: 0;
+  padding-left: 0;
   display: flex;
   list-style: none;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .nav-element {
-  margin-left: 10px;
+  margin: 0 10px 0 0; 
   text-decoration: none;
-  color: antiquewhite;
+  color: var(--lightestColor);
 }
 
