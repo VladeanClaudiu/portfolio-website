@@ -1,3 +1,5 @@
+import Sun from '../assets/sun.svg'
+
 export default function Nav() {
     return(
         <nav className="nav-section">
@@ -12,7 +14,7 @@ export default function Nav() {
                     <a className="nav-element" href="">contact</a>
                 </li>
                 <li>
-                    <a className="nav-element" href="">darkmode</a>
+                    <a className="nav-element" href=""><object className='darkmode-svg' data={Sun}></object></a>
                 </li>
             </ul>
         </nav>

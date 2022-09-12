@@ -101,6 +101,10 @@ body {
   color: var(--lightestColor);
 }
 
+.nav-element > object > .darkmode-svg > svg{
+  fill: white;
+}
+
 /* about section */
 
 .span-underline {
