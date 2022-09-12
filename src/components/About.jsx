@@ -1,11 +1,10 @@
 import Footer from "./Footer"
-
+import Header from "./Header"
 export default function About() {
     return (
         <div className="main-section">
-            <header>
-                <span>CV</span>
-            </header>
+            <Header 
+            />
             <main>
                <h1>Hello World, I'm Claudiu</h1>
                 <p>
