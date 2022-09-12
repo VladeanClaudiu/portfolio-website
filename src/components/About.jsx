@@ -1,3 +1,5 @@
+import Footer from "./Footer"
+
 export default function About() {
     return (
         <div className="main-section">
@@ -25,7 +27,7 @@ export default function About() {
             </main>
             
             
-            
+            <Footer />
         </div>
     )
 }
