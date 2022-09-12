@@ -1,13 +1,13 @@
 import './App.css'
 import Nav from './components/Nav'
-import Test from './components/Test'
+import About from './components/About'
 
 function App() {
  
   return (
     <section className='app-section'>
       <Nav />
-      <Test />
+      <About />
     </section>
   )
 }
