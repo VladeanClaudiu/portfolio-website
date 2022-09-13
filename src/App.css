@@ -85,6 +85,7 @@ body {
   flex-direction: column;
   z-index: 1;
   box-shadow: 0 -1px 6px 2px var(--lightColor);
+  text-align: center;
 }
 
 .nav-elements {
@@ -92,18 +93,23 @@ body {
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .nav-element {
   margin: 0 10px 0 0; 
   text-decoration: none;
-  color: var(--lightestColor);
+  color: var(--lighterColor);
+  align-items: center;
 }
 
-.nav-element > object > .darkmode-svg > svg{
-  fill: white;
+.svg-sun {
+  width: var(--step-0);
+  margin: 0 auto;
+  fill: var(--lightestColor);
+  margin-top: 7px;
 }
+
 
 /* about section */
 
