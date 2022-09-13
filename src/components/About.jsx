@@ -11,7 +11,7 @@ export default function About() {
                     I'm a Frontend / React Developer, 
                     I am passionate about creating interactive web apps alongside 
                     problem-solving and learning new technologies by testing myself 
-                    and developing <span className="span-underline"><a className="underlined-links" href="#">personal projects</a> </span>  in my free time. 
+                    and developing <span className="span-underline underline-effect"><a target="_blank" className="underlined-links" href="https://github.com/VladeanClaudiu?tab=repositories">personal projects</a> </span>  in my free time. 
                 </p>
                 <p>
                     I aim to make my code as reusable as possible and  I enjoy working with CSS and JS due to my love for design, typography and animation.

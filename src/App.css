@@ -31,6 +31,22 @@ body {
   
 }
 
+/* animation underline effect */
+a {
+  background: 
+    linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+    linear-gradient(to right, var(--lighterColor), var(--lighterColor), var(--lighterColor));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
 .header-section {
   margin: 15px 10px 10px 0px;
 }
@@ -100,7 +116,7 @@ body {
   margin: 0 10px 0 0; 
   text-decoration: none;
   color: var(--lighterColor);
-  align-items: center;
+  font-weight: 600;
 }
 
 .svg-sun {
@@ -114,13 +130,18 @@ body {
 /* about section */
 
 .span-underline {
-  border-bottom: 2px solid var(--lighterColor);
-  transition: .2s ease-in-out;
+  background:
+  linear-gradient(to left, var(--lighterColor), var(--lighterColor), var(--lighterColor)),
+  linear-gradient(to left, var(--lightestColor), var(--lightestColor));  
+  background-size: 0 0.1em, 100% 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
 
-.span-underline:hover {
-  transition: .2s ease-in-out;
-  border-bottom: 2px solid var(--lightColor);
+.span-underline:hover,
+.span-underline:focus {
+  background-size: 100% 0.1em, 0 0.1em;
 }
 
 .underlined-links {
@@ -133,6 +154,14 @@ body {
 /* footer section */
 .footer-section {
   margin-bottom: 5vh;
+}
+
+.footer-div {
+  content: "";
+    display: block;
+    width: 160px;
+    height: 3px;
+    background-color: var(--lighterColor);
 }
 
 .footer-section > h4 {
