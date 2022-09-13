@@ -1,8 +1,13 @@
 import Footer from "./Footer"
 import Header from "./Header"
-export default function About() {
+import Nav from "./Nav"
+
+export default function About(props) {
     return (
-        <div className="main-section">
+        <div> 
+            <Nav 
+            handleClick={props.handleClick}/>
+            <div className="main-section">
             <Header 
             />
             <main>
@@ -28,5 +33,7 @@ export default function About() {
             
             <Footer />
         </div>
+        </div>
+        
     )
 }
