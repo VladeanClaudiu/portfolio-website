@@ -2,8 +2,8 @@
 export default function Nav(props) {
     console.log(props)
     return(
-        <nav className={ 'nav-section' }>
-            <ul className={`nav-elements ${props.darkMode ?  'navSection-lightMode': ''}`}>
+        <nav className={`${props.darkMode ?  'navSection-lightMode': 'nav-section'}`}>
+            <ul className={`nav-elements`}>
                 <li>
                     <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': ''}`} href="/">about</a>
                 </li>

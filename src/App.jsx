@@ -11,7 +11,7 @@ function App() {
     setDarkMode(!darkMode);
   }
   return (
-    <section className='app-section'>
+    <section className={darkMode? "appSectionLight" : "app-section"}>
       <About
       darkMode = {darkMode}
       handleClick = {changeMode}/>

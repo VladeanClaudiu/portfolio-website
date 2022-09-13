@@ -8,11 +8,12 @@ export default function About(props) {
             <Nav 
             handleClick={props.handleClick}
             darkMode={props.darkMode}/>
-            <div className="main-section">
-            <Header 
+            <div className= {` ${props.darkMode? "mainSection-light" : "main-section"}`}>
+            <Header
+            darkMode={props.darkMode} 
             />
             <main>
-               <h1>Hello World, I'm Claudiu</h1>
+               <h1 className={props.darkMode ? "h1Light" : ""}>Hello World, I'm Claudiu</h1>
                 <p>
                     I'm a Frontend / React Developer, 
                     I am passionate about creating interactive web apps alongside 
@@ -22,7 +23,7 @@ export default function About(props) {
                 <p>
                     I aim to make my code as reusable as possible and  I enjoy working with CSS and JS due to my love for design, typography and animation.
                 </p> 
-                <h3>I'm currently...</h3>
+                <h3 className={props.darkMode ? "h3Light" : ""}>I'm currently...</h3>
                 <ul>
                     <li>working on improving my React.js skills, as I search for a new position in Frontend development.</li>
                     <li>working out as much as I can in my free time. Trying to stay fit and strong</li>
@@ -32,7 +33,9 @@ export default function About(props) {
             </main>
             
             
-            <Footer />
+            <Footer 
+            darkMode={props.darkMode} 
+            />
         </div>
         </div>
         
