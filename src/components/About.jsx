@@ -6,7 +6,8 @@ export default function About(props) {
     return (
         <div> 
             <Nav 
-            handleClick={props.handleClick}/>
+            handleClick={props.handleClick}
+            darkMode={props.darkMode}/>
             <div className="main-section">
             <Header 
             />
