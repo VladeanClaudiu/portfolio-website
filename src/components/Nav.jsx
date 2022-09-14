@@ -13,7 +13,7 @@ export default function Nav(props) {
                     <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="/">about</a>
                 </li>
                 <li>
-                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="">projects</a>
+                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="/projects">projects</a>
                 </li>
                 <li>
                     <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="">contact</a>
