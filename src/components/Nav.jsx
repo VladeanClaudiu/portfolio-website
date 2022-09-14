@@ -1,3 +1,8 @@
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+  } from "react-router-dom";
 
 export default function Nav(props) {
     console.log(props)
@@ -5,13 +10,13 @@ export default function Nav(props) {
         <nav className={`${props.darkMode ?  'navSection-lightMode': 'nav-section'}`}>
             <ul className={`nav-elements`}>
                 <li>
-                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': ''}`} href="/">about</a>
+                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="/">about</a>
                 </li>
                 <li>
-                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': ''}`} href="">projects</a>
+                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="">projects</a>
                 </li>
                 <li>
-                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': ''}`} href="">contact</a>
+                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="">contact</a>
                 </li>
                 <li>
                     <a onClick={props.handleClick}>
