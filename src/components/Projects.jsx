@@ -13,6 +13,7 @@ export default function Projects(props) {
                 <div className= {` ${props.darkMode? "mainSection-light" : "main-section"}`}>
                     <Header
                     darkMode={props.darkMode} 
+                    heading={"personal work"}
                     />
                     <main>
                     
