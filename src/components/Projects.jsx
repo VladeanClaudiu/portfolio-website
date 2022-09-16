@@ -15,6 +15,7 @@ export default function Projects(props) {
         desc = {item.description}
         process = {item.process}
         link = {item.link}
+        git = {item.git}
         />
     })
 

@@ -13,6 +13,7 @@ export default [
       "Application functional logic completed for score keeping and whether or not the answers are correct",
     ],
     link: "https://vladeanclaudiu.github.io/quizical-react-app/",
+    git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-quiz-app",
   },
 
   {
@@ -29,6 +30,7 @@ export default [
       "Application functional logic completed for score keeping and whether or not the answers are correct",
     ],
     link: "https://vladeanclaudiu.github.io/quizical-react-app/",
+    git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-quiz-app",
   },
 
   {
@@ -45,5 +47,6 @@ export default [
       "Application functional logic completed for score keeping and whether or not the answers are correct",
     ],
     link: "https://vladeanclaudiu.github.io/quizical-react-app/",
+    git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-quiz-app",
   },
 ];
