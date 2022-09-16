@@ -76,6 +76,16 @@ h1 {
   color: var(--lm-darkColor);
 }
 
+/*heading1 lightmode*/
+.heading2-light {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/*heading1 darkmode*/
+.heading2-dark {
+  font-family: 'Roboto Mono', monospace;
+}
+
 h3 {
   font-family: 'Roboto Mono', monospace;
   font-size: var(--step-0);

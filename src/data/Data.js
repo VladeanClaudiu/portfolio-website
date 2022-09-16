@@ -2,7 +2,7 @@ export default [
   {
     key: 1,
     title: "Quizical",
-    builtWith: ["[React]", "[JavaScript]", "[CSS]", "[API]"],
+    builtWith: ["[React]", "[JavaScript]", "[CSS]", "[API]", "[Figma]"],
     description:
       "This was a challenge that was part of the Scrimba React course, the challenge was solo, instructions on the final product were given and a fully working quiz had to be created. The questions and answers are fetched from the open trivia database API. The app design was provided by Scrimba and was done in Figma",
     process: [
