@@ -322,7 +322,7 @@ body {
 }
 
 .projectLink-dark > a{
-  color: var(--lm-lightestColor);
+  color: var(--lighterColor);
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
