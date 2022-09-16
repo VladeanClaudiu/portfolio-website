@@ -108,6 +108,16 @@ h4 {
   color: var(--lm-darkColor);
 }
 
+/*heading5 lightmode*/
+.heading5-light {
+  color: var(--lm-lighterColor);
+}
+
+/*heading5 darkmode*/
+.heading5-dark {
+  color: var(--lighterColor)
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;
