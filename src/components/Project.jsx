@@ -6,6 +6,15 @@ export default function Project(props){
             <h2 className={props.darkMode? "heading2-light" : "heading2-dark"}>{props.title}</h2>
             <h5>{propsTest}</h5>
             <p>{props.desc}</p>
+            <p>My process:</p>
+            <ul>
+                {props.process.map(item=> {
+                return(
+                    <li>{item}</li>
+                )
+            })}
+            </ul>
+            
         </div>
     )
 }
