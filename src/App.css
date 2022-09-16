@@ -316,7 +316,7 @@ body {
 
 .projectLink-light{
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
 }
 
 .projectLink-light > a{
@@ -328,7 +328,7 @@ body {
 
 .projectLink-dark{
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
 }
 
 .projectLink-dark > a{

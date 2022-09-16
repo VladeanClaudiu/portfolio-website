@@ -9,11 +9,12 @@ export default function Project(props){
             <ul>
                 {props.process.map(item=> {
                 return(
-                    <li>{item}</li>
+                    <li key={item+item.key}>{item}</li>
                 )
             })}
             </ul>
             <div className={props.darkMode ? "projectLink-light" : "projectLink-dark"}>
+                <a className={props.darkMode ? "span-underline-lightMode" : "span-underline"} href={props.link}>⬅Visit {props.title} Code</a>
                 <a className={props.darkMode ? "span-underline-lightMode" : "span-underline"} href={props.link}>Visit {props.title} ➜</a>
             </div>
         </div>
