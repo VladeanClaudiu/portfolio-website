@@ -14,6 +14,7 @@ export default function Projects(props) {
         tools = {item.builtWith}
         desc = {item.description}
         process = {item.process}
+        link = {item.link}
         />
     })
 

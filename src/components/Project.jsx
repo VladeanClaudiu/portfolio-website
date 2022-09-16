@@ -14,7 +14,9 @@ export default function Project(props){
                 )
             })}
             </ul>
-            
+            <div className={props.darkMode? "projectLink-light" : "projectLink-dark"}>
+                <a className={props.darkMode? "span-underline-lightMode" : "span-underline"} href={props.link}>Visit {props.title} ➜</a>
+            </div>
         </div>
     )
 }

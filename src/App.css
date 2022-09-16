@@ -302,3 +302,30 @@ body {
   line-height: 6px;
 }
 
+/* project component */
+
+.projectLink-light{
+  display: flex;
+  justify-content: right;
+}
+
+.projectLink-light > a{
+  color: var(--lm-lighterColor);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.projectLink-dark{
+  display: flex;
+  justify-content: right;
+}
+
+.projectLink-dark > a{
+  color: var(--lm-lightestColor);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
