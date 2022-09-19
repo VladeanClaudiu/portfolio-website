@@ -65,4 +65,52 @@ export default [
     link: "https://vladeanclaudiu.github.io/WordleClone/",
     git: "https://github.com/VladeanClaudiu/WordleClone",
   },
+  {
+    key: 5,
+    title: "Tenzies",
+    builtWith: ["[React]", "[JavaScript]", "[CSS]"],
+    description:
+      "The project is a game of tenzi, 10 dies are rolled and the player may click the pairs of dies they'd like to hold on to. The game is completed once all ten dies display the same number",
+    process: [
+      "Base app Generated with Vite React",
+      "The CSS was what I chose to start with. I followed the provided Figma file.",
+      "An array of 10 random numbers between 1 and 6 was generated",
+      "The Array was stored in State, the components necessary were created and the prop values were passed to each",
+      "The functions handling the logic were created and the application was completed.",
+    ],
+    link: "https://vladeanclaudiu.github.io/react-tenzies-app/",
+    git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/tenzi-dice-react",
+  },
+  {
+    key: 6,
+    title: "Travel Journal",
+    builtWith: ["[React]", "[JavaScript]", "[CSS]"],
+    description:
+      "This is a solution to a solo project from Scrimba. Solo projects are meant to challenge the skills you've learnt so far through the courses; there is no solution given by Scrimba. The goal was to create a travel journa, where data could be accessed from an external source sucha as an Api or external file. The would be used by the components to be styled and displayed.",
+    process: [
+      "Base app Generated with Vite React",
+      "The CSS was what I chose to start with. I followed the provided Figma file.",
+      "One component was needed, the component would then be mapped over and assigned to a variable which was then used to render multiple components based on the number of data elements mapped over",
+      "This was project was quite easy to complete.",
+    ],
+    link: "https://vladeanclaudiu.github.io/react-travel-journal/",
+    git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-travel-journal",
+  },
+  {
+    key: 7,
+    title: "Meme Generator",
+    builtWith: ["[React]", "[JavaScript]", "[CSS]", "[API]"],
+    description:
+      "This is a project Built in React, practice using event listeners, useState, conditional rendering, forms and side effects.",
+    process: [
+      "Base app Generated with Vite React",
+      "The CSS was what I chose to start with. I followed the provided Figma file.",
+      "Using forms in react was quite different from normal html, took a while to get used to it",
+      "Once from made sense the project was pretty straight forward. The api data was fetched, in this case the data was Meme images",
+      "The image was stored in state and useEffect was used to make new requests to Api whenever the Generate new image button was pressed",
+      "Application could be imporved by allowing the user to download their meme, enter more text options, move the text on the image.",
+    ],
+    link: "https://vladeanclaudiu.github.io/react-meme-generator/",
+    git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-meme-generator",
+  },
 ];
