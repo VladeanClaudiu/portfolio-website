@@ -48,4 +48,21 @@ export default [
     link: "https://vladeanclaudiu.github.io/color-generator/",
     git: "https://github.com/VladeanClaudiu/WorkingWithAPI/tree/main/API-ColorGenerator",
   },
+  {
+    key: 4,
+    title: "Rowdle",
+    builtWith: ["[HTML]", "[JavaScript]", "[SASS]", "[JSON]"],
+    description:
+      "This is a personal project I wanted to try develop. The worldle craze was at an all time high and I wanted to test myself and see if I could clone the game.",
+    process: [
+      "The CSS was what I chose to start with. I created a close copy of the original Worldle page.",
+      "The word Api I was considering was a subsciption so I decided to access my data from a JSON file",
+      "The div's for each block were created in JS",
+      "The logic for the game was created in pure JS",
+      "Application is incomplete but the main functionality of the Wordle game was implemented",
+      "A random word is chosen every refresh, the random word is displayed in the console if you'd like to test the project 😉",
+    ],
+    link: "https://vladeanclaudiu.github.io/WordleClone/",
+    git: "https://github.com/VladeanClaudiu/WordleClone",
+  },
 ];
