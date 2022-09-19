@@ -33,12 +33,14 @@ body {
 
   /* colors darkmode*/
   --darkColor : #013870;
+  --darkColorHighlight : #e00152;
   --lightColor : #01e08e3f;
   --lighterColor : #01e08f;
   --lightestColor : #ecf6de;
 
   /* colors lightmode*/
   --lm-darkColor : #1d314c;
+  --lm-ColorHighlight : #B34051;
   --lm-lightColor : #443d3d;
   --lm-lighterColor : #40b3a2;
   --lm-lightestColor : #f3f0f0;
@@ -49,7 +51,13 @@ body {
   margin: 15px 10px 10px 0px;
 }
 
+.header-title {
+  margin-top: 6vh;
+  letter-spacing: .1rem;
+}
+
 .initial-logo {
+  transition: .2s ease-in-out;
   background-color: var(--lightestColor);
   padding: 6px;
   font-size: var(--step-0);
@@ -88,10 +96,6 @@ h1 {
   color: var(--lm-darkColor);
 }
 
-/*heading1 darkmode*/
-.heading2-dark {
-  
-}
 
 h3 {
   font-family: 'Roboto Mono', monospace;
@@ -121,12 +125,16 @@ h4 {
 
 /*heading5 lightmode*/
 .heading5-light {
-  color: var(--lm-lighterColor);
+  transition: .2s ease-in-out;
+  color: var(--lm-ColorHighlight);
+  font-family: 'Roboto Mono';
 }
 
 /*heading5 darkmode*/
 .heading5-dark {
-  color: var(--lighterColor)
+  transition: .2s ease-in-out;
+  color: var(--darkColorHighlight);
+  font-family: 'Roboto Mono';
 }
 
 body {
@@ -252,8 +260,7 @@ body {
 
 .span-underline {
   background:
-  linear-gradient(to left, var(--lighterColor), var(--lighterColor), var(--lighterColor)),
-  linear-gradient(to left, var(--lightestColor), var(--lightestColor));  
+  linear-gradient(to left, var(--darkColorHighlight), var(--darkColorHighlight));  
   background-size: 0 0.1em, 100% 0.1em;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -269,8 +276,7 @@ body {
 
 .span-underline-lightMode {
   background:
-  linear-gradient(to left, var(--lighterColor), var(--lighterColor), var(--lighterColor)),
-  linear-gradient(to left, var(--lm-lightColor), var(--lm-lightColor));  
+  linear-gradient(to left, var(--lm-ColorHighlight), var(--lm-ColorHighlight));  
   background-size: 0 0.1em, 100% 0.1em;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -290,13 +296,13 @@ body {
 }
 
 .underlineLightmode {
-  color: var(--lm-lightColor);
-  font-weight: 600;
+  color: var(--lm-lighterColor);
   text-decoration: none;
+  font-weight: 600;
 }
 
 .underlineDarkmode {
-  color: var(--lightestColor);
+  color: var(--lighterColor);
   text-decoration: none;
   font-weight: 600;
 }
@@ -304,6 +310,7 @@ body {
 /* footer section */
 .footer-section {
   margin-bottom: 8vh;
+  margin-top: 4vh
 }
 
 .footer-div {
