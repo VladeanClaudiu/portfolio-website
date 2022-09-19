@@ -4,11 +4,11 @@ export default [
     title: "Quizical",
     builtWith: ["[React]", "[JavaScript]", "[CSS]", "[API]", "[Figma]"],
     description:
-      "This was a challenge that was part of the Scrimba React course, the challenge was solo, instructions on the final product were given and a fully working quiz had to be created. The questions and answers are fetched from the open trivia database API. The app design was provided by Scrimba and was done in Figma",
+      "This was a challenge that was part of the Scrimba React course I completed, this was a project which had to be completed without guidance, instructions on the final product were given and a fully working quiz had to be created. The questions and answers are fetched from the open trivia database API. The app design was provided by Scrimba and was done in Figma.",
     process: [
-      "Base app Generated with Vite",
+      "Base app Generated with Vite React",
       "Neccessary components were created",
-      "Applilication was styled according to the provided Figma design",
+      "Application was styled according to the provided Figma design",
       "React State and useEffect were used to handle api fetch response data",
       "Application functional logic completed for score keeping and whether or not the answers are correct",
     ],
@@ -18,33 +18,29 @@ export default [
 
   {
     key: 2,
-    title: "Quizical",
-    builtWith: ["[React]", "[JavaScript]", "[CSS]", "[API]"],
+    title: "Movie Watchlist Web-App",
+    builtWith: ["[HTML]", "[JavaScript]", "[CSS]", "[API]"],
     description:
-      "This was a challenge that was part of the Scrimba React course, the challenge was solo, instructions on the final product were given and a fully working quiz had to be created. The questions and answers are fetched from the open trivia database API. The app design was provided by Scrimba and was done in Figma",
+      "This is a solution to a solo project from Scrimba. Solo projects are meant to challenge the skills you've learnt so far through the courses, there is no solution given by Scrimba. The goal was to create a Web-App that used the OMDB Api to fetch and display data. The data was also stored on local storage. Movies could be added and removed from the watchlist.",
     process: [
-      "Base app Generated with Vite",
-      "Neccessary components were created",
-      "Applilication was styled according to the provided Figma design",
-      "React State and useEffect were used to handle api fetch response data",
-      "Application functional logic completed for score keeping and whether or not the answers are correct",
+      "The initial style for the application was based on the Figma design provided by Scrimba.",
+      "With the CSS completed the next stage for formatting the fetch data",
+      "The necessary functions were created, the function return data is then rendered",
+      "The localstorage was set up and for the watchlist page, the functionality for adding and removing is added.",
     ],
-    link: "https://vladeanclaudiu.github.io/quizical-react-app/",
-    git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-quiz-app",
+    link: "https://vladeanclaudiu.github.io/movie-watchlist-app/",
+    git: "https://github.com/VladeanClaudiu/WorkingWithAPI/blob/main/API-MovieWatchlist/",
   },
 
   {
     key: 3,
-    title: "Quizical",
-    builtWith: ["[React]", "[JavaScript]", "[CSS]", "[API]"],
+    title: "Color Scheme Generator",
+    builtWith: ["[HTML]", "[JavaScript]", "[CSS]", "[API]"],
     description:
-      "This was a challenge that was part of the Scrimba React course, the challenge was solo, instructions on the final product were given and a fully working quiz had to be created. The questions and answers are fetched from the open trivia database API. The app design was provided by Scrimba and was done in Figma",
+      "This is a solution to a solo project from Scrimba. This was my a very fun project to work on. Solo projects are meant to challenge the skills you've learnt so far through the courses; there is no solution given by Scrimba. The goal was to create a color scheme generator that used The Color Api to generate presets of colours based on the #hex value input of the user.",
     process: [
-      "Base app Generated with Vite",
-      "Neccessary components were created",
-      "Applilication was styled according to the provided Figma design",
-      "React State and useEffect were used to handle api fetch response data",
-      "Application functional logic completed for score keeping and whether or not the answers are correct",
+      "The CSS frame for the app was developed following the provided Scrimba, Figma mockup",
+      "The fetched data from the database was formatted for use",
     ],
     link: "https://vladeanclaudiu.github.io/quizical-react-app/",
     git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-quiz-app",
