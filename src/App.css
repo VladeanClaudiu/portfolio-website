@@ -314,11 +314,21 @@ body {
 }
 
 .footer-div {
+  transition: .2s ease-in-out;
   content: "";
     display: block;
     width: 160px;
     height: 3px;
-    background-color: var(--lighterColor);
+    background-color: var(--darkColorHighlight);
+}
+
+.footer-div-light {
+  transition: .2s ease-in-out;
+  content: "";
+    display: block;
+    width: 160px;
+    height: 3px;
+    background-color: var(--lm-ColorHighlight);
 }
 
 .footer-section > h4 {

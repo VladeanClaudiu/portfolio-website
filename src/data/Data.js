@@ -41,8 +41,11 @@ export default [
     process: [
       "The CSS frame for the app was developed following the provided Scrimba, Figma mockup",
       "The fetched data from the database was formatted for use",
+      "Formatted data was assigned to the div's background-color which were styled using CSS-grid",
+      "The #hex value was displayed at the bottom of each color representing the #hex value",
+      "When the hex value is clicked the user is alerted that the value was coppied.",
     ],
-    link: "https://vladeanclaudiu.github.io/quizical-react-app/",
-    git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-quiz-app",
+    link: "https://vladeanclaudiu.github.io/color-generator/",
+    git: "https://github.com/VladeanClaudiu/WorkingWithAPI/tree/main/API-ColorGenerator",
   },
 ];
