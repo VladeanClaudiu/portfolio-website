@@ -81,8 +81,25 @@ export default [
     link: "https://vladeanclaudiu.github.io/react-tenzies-app/",
     git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/tenzi-dice-react",
   },
+  // {
+  //   key: 6,
+  //   title: "JS Battle",
+  //   builtWith: ["[JavaScript]", "[CSS]", "[HTML]"],
+  //   description:
+  //     "This is a project built using mainly JS, the goal was to create a RPG style battle where a player can battle an assortment of enemies.",
+  //   process: [
+  //     "Base app Generated with Vite React",
+  //     "The CSS was what I chose to start with. I followed the provided Figma file.",
+  //     "Using forms in react was quite different from normal html, took a while to get used to it",
+  //     "Once from made sense the project was pretty straight forward. The api data was fetched, in this case the data was Meme images",
+  //     "The image was stored in state and useEffect was used to make new requests to Api whenever the Generate new image button was pressed",
+  //     "Application could be imporved by allowing the user to download their meme, enter more text options, move the text on the image.",
+  //   ],
+  //   link: "https://vladeanclaudiu.github.io/react-meme-generator/",
+  //   git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-meme-generator",
+  // },
   {
-    key: 6,
+    key: 7,
     title: "Travel Journal",
     builtWith: ["[React]", "[JavaScript]", "[CSS]"],
     description:
@@ -97,7 +114,7 @@ export default [
     git: "https://github.com/VladeanClaudiu/ReactProjects/tree/main/react-travel-journal",
   },
   {
-    key: 7,
+    key: 8,
     title: "Meme Generator",
     builtWith: ["[React]", "[JavaScript]", "[CSS]", "[API]"],
     description:
