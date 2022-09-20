@@ -16,7 +16,7 @@ export default function Nav(props) {
                     <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="/projects">projects</a>
                 </li>
                 <li>
-                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="">contact</a>
+                    <a className={`nav-element ${props.darkMode ?  'navElement-lightMode': 'navElement-darkMode'}`} href="/contact">contact</a>
                 </li>
                 <li>
                     <a onClick={props.handleClick}>
