@@ -14,7 +14,7 @@ export default function Contact(props) {
                 <div className= {` ${props.darkMode? "mainSection-light" : "main-section"}`}>
                     <Header
                     darkMode={props.darkMode} 
-                    heading={"CONTACT ME"}
+                    heading={"REACH OUT"}
                     />
                     <ContactForm />
                     <Footer 
