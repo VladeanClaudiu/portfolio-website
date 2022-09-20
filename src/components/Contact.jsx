@@ -1,6 +1,7 @@
 import Nav from "./Nav"
 import Header from "./Header"
 import Footer from "./Footer"
+import ContactForm from "./ContactForm"
 
 export default function Contact(props) {
 
@@ -15,7 +16,7 @@ export default function Contact(props) {
                     darkMode={props.darkMode} 
                     heading={"CONTACT ME"}
                     />
-
+                    <ContactForm />
                     <Footer 
                     darkMode={props.darkMode} 
                     />

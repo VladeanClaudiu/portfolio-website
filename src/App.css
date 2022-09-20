@@ -366,4 +366,8 @@ body {
   cursor: pointer;
 }
 
+/*contact section*/
+.contact-form div{
+  display: grid;
+}
 
