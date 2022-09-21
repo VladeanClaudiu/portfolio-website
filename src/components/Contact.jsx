@@ -16,7 +16,9 @@ export default function Contact(props) {
                     darkMode={props.darkMode} 
                     heading={"REACH OUT"}
                     />
-                    <ContactForm />
+                    <ContactForm 
+                    darkMode={props.darkMode}
+                    />
                     <Footer 
                     darkMode={props.darkMode} 
                     />

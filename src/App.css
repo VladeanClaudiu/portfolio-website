@@ -4,7 +4,6 @@
 
 body {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  
 }
 
 .app-section {
@@ -342,24 +341,24 @@ body {
 
 /* project component */
 
-.projectLink-light{
+.projectLink-light {
   display: flex;
   justify-content: space-between;
 }
 
-.projectLink-light > a{
+.projectLink-light > a {
   color: var(--lm-lighterColor);
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
 }
 
-.projectLink-dark{
+.projectLink-dark {
   display: flex;
   justify-content: space-between;
 }
 
-.projectLink-dark > a{
+.projectLink-dark > a {
   color: var(--lighterColor);
   font-weight: 600;
   text-decoration: none;
@@ -367,7 +366,58 @@ body {
 }
 
 /*contact section*/
-.contact-form div{
+.contact-form div {
   display: grid;
 }
 
+.form-dark > div > input {
+  transition: .2s ease-in-out;
+  background-color: var(--lm-lightestColor);
+  border: none;
+  border-bottom: 3px solid var(--lighterColor);
+  margin: 5px 0 10px 0;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-dark > div > input:focus {
+  font-weight: 600;
+  transition: .2s ease-in-out;
+  background-color: var(--lm-darkColor-);
+  color: var(--lm-lightestColor);
+  border-bottom: 3px solid var(--darkColorHighlight);
+}
+
+.form-dark > div > textarea {
+  font-family: 'Poppins', sans-serif;
+  transition: .2s ease-in-out;
+  background-color: var(--lm-lightestColor);
+  border: none;
+  border-bottom: 3px solid var(--lighterColor);
+  margin: 5px 0 10px 0;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 10px;
+  min-height: 100px;
+}
+
+.form-dark > div > textarea:focus {
+  font-weight: 600;
+  transition: .2s ease-in-out;
+  background-color: var(--lm-darkColor-);
+  color: var(--lm-lightestColor);
+  border-bottom: 3px solid var(--darkColorHighlight);
+}
+
+.form-dark > button {
+  transition: .2s ease-in-out;
+  background-color: var(--lighterColor);
+  height: 35px;
+  border: none;
+  color: var(--darkColor);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  float: right;
+}
