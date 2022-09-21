@@ -374,7 +374,7 @@ body {
   transition: .2s ease-in-out;
   background-color: var(--lm-lightestColor);
   border: none;
-  border-bottom: 3px solid var(--lighterColor);
+  border-bottom: 2px solid var(--lighterColor);
   margin: 5px 0 10px 0;
   height: 30px;
   font-size: 15px;
@@ -387,7 +387,7 @@ body {
   transition: .2s ease-in-out;
   background-color: var(--lm-darkColor-);
   color: var(--lm-lightestColor);
-  border-bottom: 3px solid var(--darkColorHighlight);
+  border-bottom: 4px solid var(--darkColorHighlight);
 }
 
 .form-dark > div > textarea {
@@ -395,7 +395,7 @@ body {
   transition: .2s ease-in-out;
   background-color: var(--lm-lightestColor);
   border: none;
-  border-bottom: 3px solid var(--lighterColor);
+  border-bottom: 2px solid var(--lighterColor);
   margin: 5px 0 10px 0;
   height: 30px;
   font-size: 15px;
@@ -408,7 +408,7 @@ body {
   transition: .2s ease-in-out;
   background-color: var(--lm-darkColor-);
   color: var(--lm-lightestColor);
-  border-bottom: 3px solid var(--darkColorHighlight);
+  border-bottom: 4px solid var(--darkColorHighlight);
 }
 
 .form-dark > button {
@@ -420,4 +420,8 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   float: right;
+}
+
+.form-paragraph{
+  margin-top: 12vh;
 }
