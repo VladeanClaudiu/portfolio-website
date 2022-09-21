@@ -30,7 +30,7 @@ export default function About(props) {
                     <li>working on improving my React.js skills, as I search for a new position in Frontend development.</li>
                     <li>working out as much as I can in my free time. Trying to stay fit and strong</li>
                     <li>looking into the riot games api to develop a personal project dashboard, 
-                        a place where all my performance stats from every Riot game API</li>
+                        a place where all my performance stats from every game API Riot gives access to</li>
                 </ul>
             </main>
             

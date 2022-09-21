@@ -35,7 +35,7 @@ body {
   --darkColorHighlight : #e00152;
   --lightColor : #01e08e3f;
   --lighterColor : #01e08f;
-  --lightestColor : #ecf6de;
+  --lightestColor : #e5dfde;
 
   /* colors lightmode*/
   --lm-darkColor : #1d314c;
@@ -366,36 +366,26 @@ body {
 }
 
 /*contact section*/
-.contact-form div {
+.contact-form > div {
   display: grid;
 }
 
-.form-dark > div > input {
+.contact-form > div > label {
+  font-weight: 600;
+}
+
+.contact-form > div > input {
   transition: .2s ease-in-out;
-  background-color: var(--lm-lightestColor);
-  border: none;
-  border-bottom: 2px solid var(--lighterColor);
   margin: 5px 0 10px 0;
   height: 30px;
   font-size: 15px;
   padding-left: 10px;
   font-family: 'Poppins', sans-serif;
-}
-
-.form-dark > div > input:focus {
-  font-weight: 600;
-  transition: .2s ease-in-out;
-  background-color: var(--lm-darkColor-);
-  color: var(--lm-lightestColor);
-  border-bottom: 4px solid var(--darkColorHighlight);
-}
-
-.form-dark > div > textarea {
-  font-family: 'Poppins', sans-serif;
-  transition: .2s ease-in-out;
-  background-color: var(--lm-lightestColor);
   border: none;
-  border-bottom: 2px solid var(--lighterColor);
+  transition: .2s ease-in-out;
+}
+
+.contact-form > div > textarea {
   margin: 5px 0 10px 0;
   height: 30px;
   font-size: 15px;
@@ -403,25 +393,95 @@ body {
   min-height: 100px;
 }
 
-.form-dark > div > textarea:focus {
-  font-weight: 600;
+.contact-form > button {
+  margin-top: 10px;
   transition: .2s ease-in-out;
-  background-color: var(--lm-darkColor-);
-  color: var(--lm-lightestColor);
-  border-bottom: 4px solid var(--darkColorHighlight);
-}
-
-.form-dark > button {
-  transition: .2s ease-in-out;
-  background-color: var(--lighterColor);
   height: 35px;
   border: none;
-  color: var(--darkColor);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   float: right;
 }
 
+.form-dark > div > label {
+  color: var(--lighterColor)
+}
+
+.form-dark > div > input {
+  transition: .2s ease-in-out;
+  background-color: var(--lm-lightestColor);
+  border-bottom: 1px solid var(--lighterColor);
+}
+
+.form-dark > div > input:focus {
+  font-weight: 600;
+  transition: .2s ease-in-out;
+  background-color: var(--lm-darkColor-);
+  color: var(--lm-lightestColor);
+  border-bottom: 2px solid var(--darkColorHighlight);
+}
+
+.form-dark > div > textarea {
+  font-family: 'Poppins', sans-serif;
+  transition: .2s ease-in-out;
+  background-color: var(--lm-lightestColor);
+  border: none;
+  border-bottom: 1px solid var(--lighterColor);
+}
+
+.form-dark > div > textarea:focus {
+  font-weight: 600;
+  transition: .2s ease-in-out;
+  background-color: var(--lm-darkColor-);
+  color: var(--lm-lightestColor);
+  border-bottom: 2px solid var(--darkColorHighlight);
+}
+
+.form-dark > button { 
+  color: var(--darkColor); 
+  background-color: var(--lighterColor);
+}
+
 .form-paragraph{
   margin-top: 12vh;
+}
+
+/*conact form lightmode*/
+.form-light > div > label {
+  color: var(--lm-lighterColor)
+}
+
+.form-light > div > input {
+  transition: .2s ease-in-out;
+  background-color: var(--lightestColor);
+  border-bottom: 1px solid var(--lm-lighterColor);
+}
+
+.form-light > div > input:focus {
+  font-weight: 600;
+  transition: .2s ease-in-out;
+  background-color: var(--lm-darkColor-);
+  color: var(--lm-lightColor);
+  border-bottom: 2px solid var(--lm-ColorHighlight);
+}
+
+.form-light > div > textarea {
+  font-family: 'Poppins', sans-serif;
+  transition: .2s ease-in-out;
+  background-color: var(--lightestColor);
+  border: none;
+  border-bottom: 1px solid var(--lm-lighterColor);
+}
+
+.form-light > div > textarea:focus {
+  font-weight: 600;
+  transition: .2s ease-in-out;
+  background-color: var(--lm-darkColor-);
+  color: var(--lm-lightColor);
+  border-bottom: 2px solid var(--darkColorHighlight);
+}
+
+.form-light > button { 
+  color: var(--lm-lightestColor); 
+  background-color: var(--lm-lighterColor);
 }
