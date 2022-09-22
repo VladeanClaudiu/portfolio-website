@@ -1,7 +1,10 @@
+import { useRef } from "react";
 import { useState } from "react"
+
 
 export default function ContactForm(props) {
     const [status, setStatus] = useState("Submit");
+    const form = useRef();
 
     const handleSubmit = ()=> {
       
