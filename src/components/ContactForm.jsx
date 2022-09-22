@@ -3,9 +3,7 @@ import emailjs from "@emailjs/browser";
 
 
 export default function ContactForm(props) {
-    const form = useRef();
-
-    const handleSubmit = (e)=> {
+    const handleSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_8174uwe', 'template_wj12e4o', form.current, 'UwV474XqMub50dpil')
         .then((result) => {
