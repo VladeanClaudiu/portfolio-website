@@ -3,25 +3,9 @@ import { useState } from "react"
 export default function ContactForm(props) {
     const [status, setStatus] = useState("Submit");
 
-    const handleSubmit = async (e) => {
-        // e.preventDefault();
-        // setStatus("Sending...");
-        // const { name, email, message} = e.target.elements;
-
-        // let details = {
-        //     name: name.value,
-        //     email: email.value,
-        //     message: message.value,
-        // };
-
-        // let resonse = await fetch("http://localhost:5173//contact", {
-        //     method: "POST",
-        //     headers : {
-        //         "Content-Type": "application/json;charset=utf-8",
-        //     },
-        //     body: JSON.stringify(details),
-        // })
-        console.log("Submitted")
+    const handleSubmit = ()=> {
+      
+    
     }
     return (
         <section>
