@@ -7,17 +7,14 @@ import Contact from './components/Contact';
 
 function App() {
   let localDMvalue = localStorage.getItem("darkMode");
+  if(localDMvalue === null){
+    localStorage.setItem("darkMode", true)
+  }
+  console.log(localDMvalue)
+  const [darkMode, setDarkMode] = useState( JSON.parse(localDMvalue) === true);
 
-  
-  const [darkMode, setDarkMode] = useState(localDMvalue);
-  console.log(darkMode)
   useEffect(()=> {
-    console.log(darkMode)
-    if(localDMvalue !== null){
-      localStorage.setItem("darkMode", darkMode)
-    }else{
-      setDarkMode(false)
-    }
+    localStorage.setItem("darkMode", darkMode)
   },[darkMode])
   
   
