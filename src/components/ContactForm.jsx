@@ -30,15 +30,15 @@ export default function ContactForm(props) {
             <form ref={form} className={`contact-form ${props.darkMode ? "form-light" : "form-dark"}`} onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="user_name" required/>
+                    <input type="text" name="user_name" required/>
                 </div>
                 <div>
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="user_email" required/>
+                    <input type="email" name="user_email" required/>
                 </div>
                 <div>
                     <label htmlFor="message">Message</label>
-                    <textarea id="message" required></textarea>
+                    <textarea name="message" required></textarea>
                 </div>
                 <button className={`contct-btn ${props.darkMode ? "btn-dark" : "btn-light"}`} type="submit">Send Message</button>
             </form>
