@@ -1,16 +1,24 @@
 import { useRef } from "react";
-import { useState } from "react"
-import emailjs from "@emailjs/browser"
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 
 export default function ContactForm(props) {
     const [status, setStatus] = useState("Submit");
     const form = useRef();
 
-    const handleSubmit = ()=> {
-      
-    
+    const handleSubmit = (e)=> {
+        e.preventDefault();
+
+        emailjs.sendForm('service_8174uwe', 'template_wj12e4o', form.current, 'UwV474XqMub50dpil')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        
     }
+
     return (
         <section>
             <h2 className={`heading2 ${props.darkMode ? "heading2-light" : "heading2-dark"}`}>Say Hi!</h2>
@@ -19,14 +27,14 @@ export default function ContactForm(props) {
                 Dont hesitate to message me, I can be reached very easily. Fill in the from below to email me at <span className={`${props.darkMode ? "span-underline-lightMode underlineLightmode" : "span-underline underlineDarkmode"}`}>claudiuver1.0@gmail.com </span>. 
             </p>
 
-            <form className={`contact-form ${props.darkMode ? "form-light" : "form-dark"}`} onSubmit={handleSubmit}>
+            <form ref={form} className={`contact-form ${props.darkMode ? "form-light" : "form-dark"}`} onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="name" required/>
+                    <input type="text" id="user_name" required/>
                 </div>
                 <div>
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" required/>
+                    <input type="email" id="user_email" required/>
                 </div>
                 <div>
                     <label htmlFor="message">Message</label>
