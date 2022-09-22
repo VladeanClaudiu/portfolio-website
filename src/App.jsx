@@ -2,11 +2,25 @@ import './App.css'
 import About from './components/About'
 import Projects from './components/Projects';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Contact from './components/Contact';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  let localDMvalue = localStorage.getItem("darkMode");
+
+  
+  const [darkMode, setDarkMode] = useState(localDMvalue);
+  console.log(darkMode)
+  useEffect(()=> {
+    console.log(darkMode)
+    if(localDMvalue !== null){
+      localStorage.setItem("darkMode", darkMode)
+    }else{
+      setDarkMode(false)
+    }
+  },[darkMode])
+  
+  
 
     function changeMode() {
       console.log("clicked")
