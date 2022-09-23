@@ -10,7 +10,7 @@ export default function About(props) {
             <Nav 
             handleClick={props.handleClick}
             darkMode={props.darkMode}/>
-            <div className= {` ${props.darkMode? "mainSection-light" : "main-section"}`}>
+            <div className= {`main-section ${props.darkMode? "mainSection-light" : "mainSection-dark"}`}>
             <Header
             darkMode={props.darkMode} 
             />

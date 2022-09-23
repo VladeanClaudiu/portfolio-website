@@ -144,23 +144,25 @@ body {
 
 .main-section {
   transition: .2s ease-in-out;
-  border: 10px solid var(--lighterColor);
   padding: 20px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* main section dark mode*/
+.mainSection-dark {
+  transition: .2s ease-in-out;
+  border: 10px solid var(--lighterColor);
 }
 
 /* main section light mode*/
 .mainSection-light {
   transition: .2s ease-in-out;
   border: 10px solid var(--lm-lighterColor);
-  padding: 20px;
 }
 
-
-/* nav section */
+/* nav-section */
 .nav-section {
-  transition: .2s ease-out;
-  font-family: 'Roboto Mono', monospace;
-  background-color: var(--darkColor);
   width: 100%;
   bottom: 0;
   height: 60px;
@@ -168,8 +170,14 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+}
+
+/* darkmode nav background  */
+.navSection-darkMode {
+  transition: .2s ease-out;
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--darkColor);
   box-shadow: 0 3px 6px 2px var(--lm-lightestColor);
-  text-align: center;
 }
 
 /* lightmode nav background */
@@ -177,15 +185,7 @@ body {
   transition: .2s ease-in-out;
   font-family: 'Roboto Mono', monospace;
   background-color: var(--lm-lightestColor);
-  width: 100%;
-  height: 60px;
-  position: fixed;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
   box-shadow: 0 3px 6px 2px var(--lm-lightColor);
-  text-align: center;
-  bottom: 0;
 }
 
 .nav-elements {
@@ -484,4 +484,38 @@ body {
 .form-light > button { 
   color: var(--lm-lightestColor); 
   background-color: var(--lm-lighterColor);
+}
+
+@media only screen and (min-width: 600px) {
+  /* nav section */
+.nav-section {
+  width: 100%;
+  display: flex;
+  top: 0;
+  position: absolute;
+  background-color: transparent;
+  box-shadow: none;
+  margin-top: 58px;
+}
+
+.nav-elements {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 140px;
+}
+
+.nav-element {
+  margin-right: 45px;
+}
+
+.main-section {
+  transition: .2s ease-in;
+  padding: 50px;
+  height: 100%;
+  min-height: 100vh;
+}
+
 }
