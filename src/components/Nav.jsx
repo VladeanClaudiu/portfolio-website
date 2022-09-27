@@ -1,11 +1,4 @@
-import {
-    createBrowserRouter,
-    RouterProvider,
-    Route,
-  } from "react-router-dom";
-
 export default function Nav(props) {
-    console.log(props)
     return(
         <nav className={`nav-section ${props.darkMode ?  'navSection-lightMode': 'navSection-darkMode'}`}>
             <ul className={`nav-elements`}>
