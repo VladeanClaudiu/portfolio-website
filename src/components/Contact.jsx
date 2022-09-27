@@ -19,9 +19,6 @@ export default function Contact(props) {
                     <ContactForm 
                     darkMode={props.darkMode}
                     />
-                    <Footer 
-                    darkMode={props.darkMode} 
-                    />
                 </div>
             </div>
         </section>

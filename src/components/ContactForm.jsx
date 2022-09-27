@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Footer from "./Footer";
 
 
 export default function ContactForm(props) {
@@ -37,8 +38,14 @@ export default function ContactForm(props) {
                     <textarea name="message" required></textarea>
                 </div>
                 <button className={`contct-btn ${props.darkMode ? "btn-dark" : "btn-light"}`} type="submit">Send Message</button>
-            </form>
-            <p className="form-paragraph">I am currently looking for a change and recently started applying for Frontend/React developer positions. If I'm a good fit for a role please contact me.</p>  
+               </form>
+               <div className="contact-form-paragraph">
+               <p className="form-paragraph">I am currently looking for a change and recently started applying for Frontend/React developer positions. If I'm a good fit for a role please contact me.</p>  
+               <Footer 
+                    darkMode={props.darkMode} 
+                    />
+               </div>
+                
             </div>
             
         </section>
