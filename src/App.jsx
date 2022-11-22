@@ -28,7 +28,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element= {<About 
+        <Route exact path="/" element= {<About 
                                         darkMode = {darkMode}
                                         handleClick = {changeMode}
                                   />}/>
